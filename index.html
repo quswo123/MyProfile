@@ -7,13 +7,14 @@
     <meta name="description" content="Pyon's playground">
     <meta name="author" content="pyon">
     <link rel="icon" type="image/png" href="images/mylogo.png"
-    <script src="https://kit.fontawesome.com/e942c9cd1e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-<script defer src="main.js"></script>
+    <script defer src="main.js"></script>
+    <script src="https://kit.fontawesome.com/e942c9cd1e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
             <img src="images/mylogo.png" style="width:50px">
@@ -31,9 +32,121 @@
 
         </div>
     </nav>
+    <!-- Home -->
+    <section id="home">
+        <img src="images/profileImg.jpg" alt="profilePhoto" class="home__avater">
+        <h1 class="home__title">Hello, <br/>I'm PyonJaeWon</h1>
+        <h2 class="home__description">Design & Front-End 개발자입니다!</h2>
+        <button class="home__contack"></button>
+    </section>
     <!-- about바 -->
-    <section id="about"></section>
-    <section id="skills"></section>
+    <section id="about">
+        <h1>About me</h1>
+        <p>한국소프트웨어기술진흥협회에서 JAVA-Secure코딩 교육과정을 수료한뒤 프론트엔드 개발자가 되기 위해 공부중인 사람입니다!</p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon"><i class="fab fa-html5"></i></div>
+                <div class="major__title">HTML</div>
+                <div class="major__description">웹표준에 맞게 HTML를 만들수 있습니다!</div>
+            </div>
+            <div class="major">
+                <div class="major__icon"><i class="fab fa-css3-alt"></i></div>
+                <div class="major__title">CSS</div>
+                <div class="major__description">CSS를 이용해 HTML을 스타일링할수 있습니다!</div>
+            </div>
+            <div class="major">
+                <div class="major__icon"><i class="fab fa-js"></i></div>
+                <div class="major__title">Java-Script</div>
+                <div class="major__description">JS를 이용하여 HTML에 동적으로 기능을 추가할 수 있습니다!</div>
+            </div>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <img src="images/jobs/토이스토리.jpg" alt="toyStory" class="job__logo">
+                <p class="job__name">한국소프트웨어기술진흥협회</p>
+                <p class="job__period">2020.04 ~ 2020.10</p>
+            </div>
+            <div class="job">
+                <img src="images/jobs/토이스토리.jpg" alt="toyStory" class="job__logo">
+                <p class="job__name">한국소프트웨어기술진흥협회</p>
+                <p class="job__period">2020.04 ~ 2020.10</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>할수 있는 기술이 여기에 명시되어야합니다</p>
+        <div class="skillset">
+            <div class="skillset__left">
+               <h3 class="skillset__title">Skills</h3>
+                <div class="skill">
+                   <div class="skill__description">
+                       <span>HTML</span>
+                       <span>60%</span>
+                   </div>
+                   <div class="skill__bar">
+                       <div class="skill__value"></div>
+                   </div>
+                </div>
+                <div class="skill">
+                <div class="skill__description">
+                    <span>CSS</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__value"></div>
+                </div>
+                </div>
+                <div class="skill">
+                <div class="skill__description">
+                    <span>JS</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__value"></div>
+                </div>
+                </div>
+                <div class="skill">
+                <div class="skill__description">
+                    <span>Vue.js</span>
+                    <span>20%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__value"></div>
+                </div>
+                </div>
+                <div class="skill">
+                <div class="skill__description">
+                    <span>J-Query</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__value"></div>
+                </div>
+                </div>
+            </div>
+            <div class="skillset__right">
+                <div class="tools">
+                    <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Eclipse</span></li>
+                            <li><span>SQLDeveloper</span></li>
+                            <li><span>SourceTree</span></li>
+                            <li><span>githubDesktop</span></li>
+                        </ul>
+                </div>
+                <div class="etc">
+                    <h3 class="skillset__title">Etc</h3>
+                    <ul class="etc__list">
+                        <li><span>Git</span></li>
+                        <li><span>PhotoShop</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="work"></section>
     <section id="testimonials"></section>
     <section id="contact"></section>
