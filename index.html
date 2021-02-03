@@ -21,25 +21,26 @@
             <a href="#">Pyon's</a>
         </div>
             <ul class="navbar__menu">
-                <li class="navbar__menu__item active">Home</li>
-                <li class="navbar__menu__item active">About</li>
-                <li class="navbar__menu__item active">Skills</li>
-                <li class="navbar__menu__item active">Work</li>
-                <li class="navbar__menu__item active">Testimonials</li>
-                <li class="navbar__menu__item active">Contact</li>
+                <li class="navbar__menu__item active" data-target="#home">Home</li>
+                <li class="navbar__menu__item active" data-target="#about">About</li>
+                <li class="navbar__menu__item active" data-target="#skills">Skills</li>
+                <li class="navbar__menu__item active" data-target="#work">Work</li>
+                <li class="navbar__menu__item active" data-target="#testimonials">Testimonials</li>
+                <li class="navbar__menu__item active" data-target="#contact">Contact</li>
             </ul>
 
         <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-            
+            <i class="fas fa-bars"></i>   
         </button>
     </nav>
     <!-- Home -->
     <section id="home">
-        <img src="images/profileImg.jpg" alt="profilePhoto" class="home__avater">
+        <div class="home__container">
+            <img src="images/profileImg.jpg" alt="profilePhoto" class="home__avater">
         <h1 class="home__title">Hello, <br/>I'm PyonJaeWon</h1>
         <h2 class="home__description">Design & Front-End 개발자입니다!</h2>
-        <button class="home__contact">Contact</button>
+        <button class="home__contact" data-target="#contact">Contact</button>
+        </div>
     </section>
     <!-- about바 -->
     <section id="about" class="section section__container">
@@ -80,6 +81,7 @@
             </div>
         </div>
     </section>
+    <!-- skills바 -->
     <section id="skills" class="section">
         <div class="section__container">
             <h1>Skills</h1>
@@ -156,47 +158,48 @@
         </div>
         </div>
     </section>
+    <!-- work바 -->
     <section id="work" class="section">
         <div class="section__container">
             <h1>My Work</h1>
         <h2>Projects</h2>
         <div class="work__categories">
-            <button class="category__btn active">All <span class="category__count">3</span></button>
-            <button class="category__btn">Front_end <span class="category__count">3</span></button>
-            <button class="category__btn">Back-end <span class="category__count">3</span></button>
-            <button class="category__btn">Mobile <span class="category__count">3</span></button>
+            <button class="category__btn active" data-item="all">All <span class="category__count">3</span></button>
+            <button class="category__btn" data-item="Front-end">Front_end <span class="category__count">3</span></button>
+            <button class="category__btn" data-item="Back-end">Back-end <span class="category__count">3</span></button>
+            <button class="category__btn" data-item="Mobile">Mobile <span class="category__count">3</span></button>
         </div>
         <div class="work__projects">
             <!-- 내가 한 프로젝트 연결 -->
-            <a href="" class="project" target="blank">
+            <a href="" class="project" target="blank" data-type="Front-end">
                 <img src="images/projects/메인.PNG" class="project__img" alt="trello">
                 <div class="project__description">
                     <h3>trello Site</h3>
                     <span>vue.js를 기반으로 한 사이트</span>
                 </div>
             </a>
-            <a href="" class="project" target="blank">
+            <a href="" class="project" target="blank" data-type="Front-end">
                 <img src="images/projects/메인.PNG" class="project__img" alt="trello">
                 <div class="project__description">
                     <h3>trello Site</h3>
                     <span>vue.js를 기반으로 한 사이트</span>
                 </div>
             </a>
-            <a href="" class="project" target="blank">
+            <a href="" class="project" target="blank" data-type="Front-end">
                 <img src="images/projects/메인.PNG" class="project__img" alt="trello">
                 <div class="project__description">
                     <h3>trello Site</h3>
                     <span>vue.js를 기반으로 한 사이트</span>
                 </div>
             </a>
-            <a href="" class="project" target="blank">
+            <a href="" class="project" target="blank" data-type="Front-end">
                 <img src="images/projects/메인.PNG" class="project__img" alt="trello">
                 <div class="project__description">
                     <h3>trello Site</h3>
                     <span>vue.js를 기반으로 한 사이트</span>
                 </div>
             </a>
-            <a href="" class="project" target="blank">
+            <a href="" class="project" target="blank" data-type="Back-end">
                 <img src="images/projects/메인.PNG" class="project__img" alt="trello">
                 <div class="project__description">
                     <h3>trello Site</h3>
@@ -206,6 +209,7 @@
         </div>
         </div>
     </section>
+    <!-- testimonials바 -->
     <section id="testimonials" class="section">
         <div class="section__container">
             <h1>Testimonials</h1>
@@ -240,6 +244,7 @@
             </div>
         </div>
     </section>
+    <!-- contact바 -->
     <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">quswo0210@gmail.com</h2>
@@ -253,5 +258,9 @@
         </div>
         <p class="contact__right">2021 Pyon's - All right Reserved</p>
     </section>
+
+    <button class="arrow-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 </html>
