@@ -92,24 +92,32 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #bff0cf;
+
   align-items: center;
-  padding: 16px;
-  color: var(--color-white);
+  padding: 4px 10px;
+  color: var(--color-black);
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
+#navbar a {
+  color: var(--color-black);
+}
+
 #navbar.navbar--dark {
-  background-color: greenyellow;
-  padding: 8px;
+  background-color: var(--color-white);
+  padding: 6px;
   transition: all var(--animation-duration) ease-in-out;
 }
 
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+}
+
+.fas {
+  color: var(--color-dark-pink);
 }
 
 .navbar__menu {
@@ -122,6 +130,7 @@ p {
   cursor: pointer;
   border-radius: var(--size-border-radius);
   border: 1px solid transparent;
+  font-size: var(--font-regular);
 }
 
 .navbar__menu__item.active {
@@ -130,14 +139,14 @@ p {
 
 .navbar__menu__item:hover {
   border-color: var(--color-white);
-  background-color: var(--color-dark-pink);
+  background-color: #e2f0f4;
   border-radius: var(--size-border-radius);
 }
 
 /* home */
 #home {
   text-align: center;
-  background-image: url(images/배경.png);
+  background-image: url(images/lightsky.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -153,20 +162,20 @@ p {
 }
 
 .home__title {
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .home__description {
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .home__contact {
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
-  color: var(--color-white);
+  color: var(--color-black);
   margin: 24px;
   padding: 8px 12px;
-  border: 2px solid var(--color-white);
+  border: 2px solid var(--color-blue);
   border-radius: var(--size-border-radius);
 }
 
@@ -200,8 +209,26 @@ p {
   color: var(--color-blue);
 }
 
-.major__icon:hover i {
+/* .major__icon:hover i {
   color: var(--color-pink);
+  transform: rotate(-30deg) scale(1.2);
+  transition: all 300ms ease;
+} */
+
+.htmlani:hover i {
+  color: #dc4a25;
+  transform: rotate(-30deg) scale(1.2);
+  transition: all 300ms ease;
+}
+
+.cssani:hover i {
+  color: #244bdd;
+  transform: rotate(-30deg) scale(1.2);
+  transition: all 300ms ease;
+}
+
+.jsani:hover i {
+  color: #de9d28;
   transform: rotate(-30deg) scale(1.2);
   transition: all 300ms ease;
 }
@@ -242,7 +269,7 @@ p {
 
 /* skills */
 #skills {
-  background-color: var(--color-yellow);
+  background-color: #e0eef4;
 }
 
 .skillset {
@@ -314,7 +341,7 @@ p {
 
 .category__btn.active,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: #e2f0f4;
   color: var(--color-white);
 }
 
@@ -445,22 +472,39 @@ p {
 
 /* contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: #e0eef4;
 }
 
 .contact__title {
   margin: 32px;
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .contact__email {
-  color: var(--color-white);
+  color: var(--color-black);
   font-size: var(--font-medium);
 }
 
 .contact__links {
   font-size: 70px;
   margin: 24px;
+}
+
+.fa-github {
+  color: var(--color-black);
+}
+
+.fa-instagram {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  border-radius: 15px;
 }
 
 .contact__links i:hover {
@@ -470,7 +514,7 @@ p {
 }
 
 .contact__right {
-  color: var(--color-white);
+  color: var(--color-black);
   margin-top: 50px;
 }
 
@@ -486,7 +530,7 @@ p {
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
     display: block;
-    background-color: var(--color-pink);
+    color: var(--color-pink);
   }
 
   #navbar {
@@ -536,8 +580,7 @@ p {
   bottom: 50px;
   right: 50px;
   font-size: var(--font-large);
-  background-color: var(--color-pink);
-  color: var(--color-white);
+  background-color: #0ff2d9;
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -553,4 +596,8 @@ p {
 
 .project.invisible {
   display: none;
+}
+
+.fa-arrow-up {
+  color: var(--color-black);
 }
