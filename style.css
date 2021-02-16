@@ -245,7 +245,7 @@ p {
 .job__logo {
   width: 70px;
   height: 70px;
-  border-radius: 25%;
+  border: none;
 }
 
 .job {
@@ -528,6 +528,15 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  :root {
+    /* font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 11px;
+  }
+
   .navbar__toggle-btn {
     display: block;
     color: var(--color-pink);
@@ -551,6 +560,10 @@ p {
 
   .navbar__menu.open {
     display: block;
+  }
+
+  .section {
+    padding: 16px;
   }
 
   .about__majors {
